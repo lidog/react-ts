@@ -1,6 +1,11 @@
 module.exports = {
+  env: {
+    browser: true,
+    commonjs: true,
+    es6: true
+  },
   extends: [require.resolve('@umijs/fabric/dist/eslint')],
-  gloabls: {},
+  ignorePatterns: ['.eslintrc.js'],
   plugins: ['react-hooks'],
   rules: {
     'no-restricted-syntax': 0,
