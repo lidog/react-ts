@@ -1,7 +1,11 @@
 import React from 'react'
+import Home from '@src/pages/home'
 
 const App = () => {
-  return <div>helle react</div>
+  return <div>
+    <Home></Home>
+    helle react
+    </div>
 }
 
 export default App
