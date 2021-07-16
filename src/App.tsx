@@ -4,8 +4,8 @@ import Home from "@src/pages/home";
 const App = () => {
   return (
     <div>
-      <Home></Home>
       helle react
+      <Home></Home>
     </div>
   );
 };
