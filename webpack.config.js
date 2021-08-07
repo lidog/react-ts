@@ -7,13 +7,14 @@ module.exports = {
     app: "./src/index.tsx",
   },
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "./dist"),
     filename: "[name].bundle.js",
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
       "@src": path.resolve(__dirname, "./src"),
+      "@Comp": path.resolve(__dirname, "./src/components"),
     },
   },
   module: {
@@ -43,6 +44,9 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
+              modules: {
+                localIdentName: "[path][name]__[local]--[hash:base64:5]",
+              },
               importLoaders: 1,
             },
           },

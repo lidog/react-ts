@@ -10,7 +10,8 @@
     "strict": true,
     "baseUrl": ".", 
     "paths": {
-      "@src/*":  ["src/*"]
+      "@src/*":  ["src/*"],
+      "@Comp/*":  ["src/components/*"],
     }
   }
 }

@@ -22,5 +22,10 @@ module.exports = {
     "no-param-reassign": 0,
     "no-unused-expressions": 0,
     "prettier/prettier": "error",
+    "no-console": 0,
+    "no-unused-vars": 0,
+    "no-return-assign": 0,
+    "max-classes-per-file": 0,
+    "@typescript-eslint/no-unused-vars": ["off"],
   },
 };
