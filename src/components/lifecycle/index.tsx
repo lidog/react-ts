@@ -12,13 +12,14 @@ class SubCounter extends React.Component<{ count: number }> {
     console.log("子 从props 隐射状态到state");
     return null;
   }
-  UNSAFE_componentWillReceiveProps() {
-    // 当props 变化时触发
-    console.log("子 props 改变");
-  }
-  UNSAFE_componentWillMount() {
-    console.log("子 准备挂载");
-  }
+  // 用了 getDerivedStateFromProps 不能用 UNSAFE_componentWillReceiveProps 和 UNSAFE_componentWillMount
+  // UNSAFE_componentWillReceiveProps() {
+  //   // 当props 变化时触发
+  //   console.log("子 props 改变");
+  // }
+  // UNSAFE_componentWillMount() {
+  //   console.log("子 准备挂载");
+  // }
   componentDidMount() {
     console.log("子 挂载完成");
   }

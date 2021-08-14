@@ -1,0 +1,15 @@
+.box {
+    padding: 5px;
+    margin: 10px;
+}
+.w200 {
+    width: 200px;
+}
+.red-border {
+    @extend .box;
+    border: 1px solid red;
+}
+.blue-border {
+    @extend .box;
+    border: 1px solid blue;
+}

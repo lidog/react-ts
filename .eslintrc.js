@@ -27,5 +27,6 @@ module.exports = {
     "no-return-assign": 0,
     "max-classes-per-file": 0,
     "@typescript-eslint/no-unused-vars": ["off"],
+    "@typescript-eslint/no-use-before-define": ["off"],
   },
 };

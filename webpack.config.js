@@ -38,19 +38,21 @@ module.exports = {
         type: "asset/inline",
       },
       {
-        test: /\.(scss|css)$/,
+        test: /\.s[ac]ss$/i,
         use: [
           "style-loader",
           {
             loader: "css-loader",
             options: {
               modules: {
-                localIdentName: "[path][name]__[local]--[hash:base64:5]",
+                localIdentName: "[path][name][hash:base64:5]_[local]",
               },
-              importLoaders: 1,
+              importLoaders: 2,
             },
           },
           "postcss-loader",
+          // 将 Sass 编译成 CSS
+          "sass-loader",
         ],
       },
       {

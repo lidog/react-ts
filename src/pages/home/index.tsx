@@ -6,6 +6,7 @@ import { Fun } from "@Comp/ref/Fun";
 import { ObjectRef } from "@Comp/ref/Object";
 import { ForwordRef } from "@Comp/ref/ForwordRef";
 import Counter from "@src/components/lifecycle";
+import Context from "@src/components/Context";
 
 class Home extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class Home extends React.Component {
         <ObjectRef></ObjectRef>
         <ForwordRef></ForwordRef>
         <Counter></Counter>
+        <Context></Context>
       </div>
     );
   }
