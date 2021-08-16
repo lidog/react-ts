@@ -26,7 +26,10 @@ module.exports = {
     "no-unused-vars": 0,
     "no-return-assign": 0,
     "max-classes-per-file": 0,
-    "@typescript-eslint/no-unused-vars": ["off"],
+    "no-plusplus": 0,
+    "no-underscore-dangle": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/no-unused-expressions": ["off"],
     "@typescript-eslint/no-use-before-define": ["off"],
   },
 };
