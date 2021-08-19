@@ -10,7 +10,9 @@ function HookUseEffect() {
       // setNumber(number+1) 这样写由于形成闭包，number 永远拿到都是0
       setNumber(lastNumber => lastNumber + 1); // 通过传入回调函数的方式，拿到上一次的number，做累加才会有效果
     }, 1000);
-    return () => clearInterval(timer);
+    return () => {
+      clearInterval(timer);
+    };
   });
 
   return (

@@ -9,12 +9,14 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "[name].bundle.js",
+    publicPath: "/",
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
     alias: {
       "@src": path.resolve(__dirname, "./src"),
-      "@Comp": path.resolve(__dirname, "./src/components"),
+      "@comp": path.resolve(__dirname, "./src/components"),
+      "@pages": path.resolve(__dirname, "./src/pages"),
     },
   },
   module: {

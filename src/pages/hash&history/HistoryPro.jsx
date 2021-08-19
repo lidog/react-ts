@@ -46,6 +46,7 @@ function HistoryPro() {
         return result;
       };
     })();
+    return () => (window.onpushstate = null);
   }, []);
   return (
     <div>
