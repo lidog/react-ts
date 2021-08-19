@@ -12,6 +12,7 @@ class Home extends React.Component {
   render() {
     return (
       <div>
+        <h2>home</h2>
         <State></State>
         <Css3></Css3>
         <RefString></RefString>

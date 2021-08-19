@@ -29,7 +29,8 @@ module.exports = {
     "no-plusplus": 0,
     "no-underscore-dangle": 0,
     "@typescript-eslint/no-unused-vars": 0,
-    "@typescript-eslint/no-unused-expressions": ["off"],
-    "@typescript-eslint/no-use-before-define": ["off"],
+    "@typescript-eslint/no-unused-expressions": 0,
+    "@typescript-eslint/no-shadow": 0,
+    "@typescript-eslint/no-use-before-define": 0,
   },
 };
