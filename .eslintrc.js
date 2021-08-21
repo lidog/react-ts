@@ -31,6 +31,8 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": 0,
     "@typescript-eslint/no-unused-expressions": 0,
     "@typescript-eslint/no-shadow": 0,
+    "@typescript-eslint/no-invalid-this": 0,
+    "guard-for-in": 0,
     "@typescript-eslint/no-use-before-define": 0,
   },
 };
