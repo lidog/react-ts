@@ -7,6 +7,7 @@ import regulex from "@pages/regulex";
 import Router from "@pages/router";
 import Redux from "@pages/redux";
 import reactRedux from "@pages/react-redux";
+import dva from "@pages/dva";
 
 const App = () => {
   const mr10 = { marginRight: "10px" };
@@ -48,6 +49,9 @@ const App = () => {
         <Link style={mr10} to="/reactRedux">
           react-redux
         </Link>
+        <Link style={mr10} to="/dva">
+          dva
+        </Link>
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/home" component={Home} />
@@ -57,6 +61,7 @@ const App = () => {
           <Route path="/router" component={Router} />
           <Route path="/redux" component={Redux} />
           <Route path="/reactRedux" component={reactRedux} />
+          <Route path="/dva" component={dva} />
         </Switch>
       </BrowserRouter>
     </div>
