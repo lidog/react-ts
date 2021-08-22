@@ -3,10 +3,9 @@ import React, { useEffect, useState, useReducer } from "react";
 function Hash() {
   const [pathName, setPathName] = useState("/a");
   useEffect(() => {
-    window.addEventListener("hashchange", event => {
-      console.log("hash event", event);
-      setPathName(window.location.hash.slice(1));
-    });
+    const handle = () => setPathName(window.location.hash.slice(1));
+    window.addEventListener("hashchange", handle);
+    return () => window.removeEventListener("hashchange", handle);
   }, []);
   return (
     <div>

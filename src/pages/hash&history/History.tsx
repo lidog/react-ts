@@ -9,9 +9,9 @@ function History() {
   };
   useEffect(() => {
     // 如果当前的历史栈指针发生变化就会触发 popstate 事件，执行对应的回调函数
-    window.addEventListener("popstate", () => {
-      setPathName(window.location.pathname);
-    });
+    const handle = () => setPathName(window.location.pathname);
+    window.addEventListener("popstate", handle);
+    return () => window.removeEventListener("popstate", handle);
   }, []);
   return (
     <div>
