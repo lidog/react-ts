@@ -33,6 +33,8 @@ module.exports = {
     "@typescript-eslint/no-shadow": 0,
     "@typescript-eslint/no-invalid-this": 0,
     "guard-for-in": 0,
+    "global-require": 0,
+    "import/no-dynamic-require": 0,
     "@typescript-eslint/no-use-before-define": 0,
   },
 };

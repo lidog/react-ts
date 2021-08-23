@@ -2,6 +2,7 @@ import dva, { connect } from "dva";
 import React from "react";
 /* eslint-disable */
 import { Route, Link, routerRedux } from "dva/router";
+
 const { ConnectedRouter } = routerRedux;
 
 export default function () {
